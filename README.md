@@ -14,19 +14,21 @@ This todo list project had a <strong>2 hour time limit.</strong>
 #### Non-Functional requirements:
 
 -   Use TypeScript, Node and in-memory storage.
--   Expose a REST APi interface.
+-   Expose a REST API interface.
 -   Write unit tests to test critical parts of the application.
--   Prepare a Dockerfile to allow running the application.
--   Create a README.md file and include a screenshot of test coverage.
+-   Prepare a Dockerfile to run the application.
+-   Create a README.md file to state instructions and include a screenshot of test coverage.
 
 ### Building
 
 To build the docker image, execute the following command from the inside the project's directory:
+
 `docker build -t todo-app .`
 
 ### Running
 
 To run the image as a container with a name of 'todo', run the following command:
+
 `docker run -p 3000:3000 --name todo todo-app`
 
 ### Test results
